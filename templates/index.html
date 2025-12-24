@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Planeaciones</title>
+</head>
+<body>
+    <h1>Generador de Planeaciones Curriculares</h1>
+    <form id="plan-form">
+        <label for="grade">Grado:</label>
+        <select id="grade" name="grade">
+            <option value="1">1ro</option>
+            <option value="2">2do</option>
+            <option value="3">3ro</option>
+            <!-- Agrega más grados según sea necesario -->
+        </select>
+        <br><br>
+        <label for="subject">Asignatura:</label>
+        <select id="subject" name="subject">
+            <option value="math">Matemáticas</option>
+            <option value="science">Ciencias</option>
+            <option value="history">Historia</option>
+            <!-- Agrega más asignaturas según sea necesario -->
+        </select>
+        <br><br>
+        <label for="prae">Dimensión PRAE:</label>
+        <select id="prae" name="prae">
+            <option value="agua">Agua y elementos naturales</option>
+            <option value="biodiversidad">Naturaleza y biodiversidad</option>
+            <option value="residuos">Residuos y consumo responsable</option>
+            <!-- Agrega más dimensiones según sea necesario -->
+        </select>
+        <br><br>
+        <label for="sessions">Número de sesiones (2-10):</label>
+        <input type="number" id="sessions" name="sessions" min="2" max="10">
+        <br><br>
+        <button type="submit">Generar Planeación</button>
+    </form>
+    <hr>
+    <h2>Planeación Generada</h2>
+    <pre id="output"></pre>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
