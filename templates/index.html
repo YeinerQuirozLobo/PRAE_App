@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Planeaciones</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <h1>Generador de Planeaciones Curriculares</h1>
-    <form id="plan-form">
-        <label for="grade">Grado:</label>
+    <div class="container">
+        <h1>Generador de Planeaciones Curriculares</h1>
+        <form id="plan-form">
+            <label for="grade">Grado:</label>
         <select id="grade" name="grade">
-            <option value="1">1ro</option>
-            <option value="2">2do</option>
-            <option value="3">3ro</option>
-            <!-- Agrega más grados según sea necesario -->
+            <option value="6">6to</option>
+            <option value="7">7mo</option>
+            <option value="8">8vo</option>
+            <option value="9">9no</option>
+            <option value="10">10mo</option>
+            <option value="11">11vo</option>
         </select>
         <br><br>
         <label for="subject">Asignatura:</label>
         <select id="subject" name="subject">
-            <option value="math">Matemáticas</option>
-            <option value="science">Ciencias</option>
-            <option value="history">Historia</option>
-            <!-- Agrega más asignaturas según sea necesario -->
+            <option value="ciencias_naturales">Ciencias Naturales y Educación Ambiental</option>
+            <option value="quimica">Química</option>
+            <option value="fisica">Física</option>
+            <option value="ciencias_sociales">Ciencias Sociales (Historia, Geografía, Democracia)</option>
+            <option value="artistica">Educación Artística y Cultural</option>
+            <option value="etica">Educación Ética y en Valores Humanos</option>
+            <option value="educacion_fisica">Educación Física, Recreación y Deportes</option>
+            <option value="religion">Educación Religiosa</option>
+            <option value="castellano">Lengua Castellana</option>
+            <option value="ingles">Inglés</option>
+            <option value="matematicas">Matemáticas</option>
+            <option value="tecnologia">Tecnología e Informática</option>
+            <option value="filosofia">Filosofía</option>
+            <option value="economia_politica">Ciencias Políticas y Económicas</option>
         </select>
         <br><br>
         <label for="prae">Dimensión PRAE:</label>
@@ -40,6 +54,7 @@
     <hr>
     <h2>Planeación Generada</h2>
     <pre id="output"></pre>
+    </div>
     <script src="/static/js/main.js"></script>
 </body>
 </html>
